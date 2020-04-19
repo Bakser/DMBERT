@@ -3,12 +3,14 @@ A temporary repo to share the DMBERT code for Event Detection
 
 This repo includes a recent implementation of the DMBERT model in [the NAACL work](https://github.com/thunlp/Adv-ED) with the support of the newest [transformers](https://github.com/huggingface/transformers) library.
 
-Just a temorary repo, not well-documented, will be merged into some to-be-announced works in the future.
+Just a temporary repo, not well-documented, will be merged into some to-be-announced works in the future.
 
 Most of the codes are changed from the examples in [transformers](https://github.com/huggingface/transformers), you can refer to that repo for most of your questions.
 
 # Requirments
+
 transformers
+
 torch >= 1.2.0
 
 # Usage
