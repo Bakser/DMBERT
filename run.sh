@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python3 run_ee.py \
+    --data_dir ../ACE05/ \        # refer to your preprocessed ACE file, the format should be like in the https://github.com/thunlp/HMEAE
+    --model_type bert \ #only support Bert now
+    --model_name_or_path bert-base-uncased \
+    --task_name ace \
+    --output_dir ./ACEs \
+    --max_seq_length 128 \
+    --do_lower_case \
+    --per_gpu_train_batch_size 42 \
+    --per_gpu_eval_batch_size 42 \
+    --gradient_accumulation_steps 1 \
+    --learning_rate 5e-5 \
+    --num_train_epochs 20 \
+    --save_steps 500 \
+    --logging_steps 500 \
+    --seed 233333 \
+    --do_train \
+    --do_eval \
+    --do_test \
